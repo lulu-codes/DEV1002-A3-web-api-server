@@ -9,6 +9,11 @@ class Config(object):
             raise ValueError("DATABASE_URI is not set")
         return value
 
+    # Replace "super-secret-key" placeholder with your actual secret key in .env file
+    JWT_SECRET_KEY = os.environ.get("JWT_SECRET_KEY", "super-secret-key")
+
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+
 class DevelopmentConfig(Config):
     DEBUG = True
 
