@@ -73,10 +73,10 @@ pip install -r requirements.txt    # Depending on pip version, pip3 may be requi
   - Then copy the variables examples included in `.env.example` file into `.env` file.
     *Example:*
     ```
-    DATABASE_URL=postgresql+psycopg2://<user>:<password>@localhost:5432/comicslog
+    DATABASE_URI=postgresql+psycopg2://<user>:<password>@localhost:5432/comicslog
     JWT_SECRET_KEY=<paste-your-secret-key-here>
     ```
-    - **DATABASE_URL:** Replace 'user' and 'password' with your local Postgres user and password.
+    - **DATABASE_URI:** Replace 'user' and 'password' with your local Postgres user and password.
     - **JWT_SECRET_KEY:** Replace placeholder 'your_secret_key' with a secret long random string.
       - To generate a SECRET_KEY, you can use below method or alternative method of your choice. Copy the output and replace the placeholder secret key.
         ```bash
